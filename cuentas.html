@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia sesión o crea tu cuenta en SuperFresh.">
+  <title>Iniciar sesión | SuperFresh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <p class="top-bar-text"><span>🚚 Envío <strong>gratis</strong> en compras mayores a $30.00</span><span>🕒 Lun a sáb 7:00 AM - 9:00 PM</span><span>⚡ Entrega en menos de 1 hora</span></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar el menú">
+    <div class="container header-main">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+      <a href="index.html" class="brand">🥦 Super<span>Fresh</span></a>
+      <form class="header-search" role="search" action="catalogo.html" method="get">
+        <label for="q" class="visually-hidden">Buscar productos</label>
+        <span class="icon" aria-hidden="true">🔍</span>
+        <input type="search" id="q" name="q" placeholder="Buscar productos (leche, manzana, pollo)...">
+      </form>
+      <div class="header-actions">
+        <a href="cuentas.html" class="user-link">👤 Mi cuenta</a>
+        <a href="catalogo.html#mi-carrito" class="cart-link">🛒 Carrito</a>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="ofertas.html">Ofertas de la semana</a></li>
+          <li><a href="catalogo.html#mi-carrito">Carrito y pago</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="auth-wrap">
+      <div class="card">
+        <h1>Iniciar sesión</h1>
+        <p>Accede para gestionar tus pedidos y ver tus ofertas guardadas.</p>
+        <form action="index.html" method="get">
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" autocomplete="current-password" minlength="8" required>
+          </div>
+          <label class="check"><input type="checkbox" name="recordar"> Mantener mi sesión iniciada</label>
+          <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+        </form>
+        <div class="auth-links">
+          <p>¿No tienes cuenta? <a href="cuentas.html#registro">Regístrate aquí</a></p>
+          <p><a href="contacto.html">¿Olvidaste tu contraseña? Escríbenos</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-wrap auth-second" id="registro">
+      <div class="card">
+        <h2>Crear cuenta</h2>
+        <form action="index.html" method="get">
+          <div class="form-group"><label for="reg-nombre">Nombre completo</label><input type="text" id="reg-nombre" name="nombre" autocomplete="name" minlength="3" required></div>
+          <div class="form-group"><label for="reg-email">Correo electrónico</label><input type="email" id="reg-email" name="email" autocomplete="email" required></div>
+          <div class="form-group"><label for="reg-pass">Contraseña</label><input type="password" id="reg-pass" name="password" autocomplete="new-password" minlength="8" required><p class="hint">Usa al menos 8 caracteres.</p></div>
+          <label class="check"><input type="checkbox" name="terminos" required> Acepto los términos y condiciones</label>
+          <button type="submit" class="btn btn-mint btn-block">Crear cuenta</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <a href="index.html" class="brand">🥦 Super<span>Fresh</span></a>
+        <p>Tu supermercado de confianza: calidad, frescura y entregas rápidas.</p>
+      </section>
+      <nav aria-label="Atención al cliente">
+        <h3>Atención al cliente</h3>
+        <ul>
+          <li><a href="contacto.html">Contacto y sucursales</a></li>
+          <li><a href="cuentas.html">Mi cuenta</a></li>
+          <li><a href="catalogo.html#mi-carrito">Carrito y pago</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Pasillos">
+        <h3>Pasillos</h3>
+        <ul>
+          <li><a href="catalogo.html#frutas">Frutas y verduras</a></li>
+          <li><a href="catalogo.html#carnes">Carnicería y pescado</a></li>
+          <li><a href="catalogo.html#lacteos">Lácteos y huevos</a></li>
+          <li><a href="ofertas.html">Ofertas de la semana</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h3>Escríbenos</h3>
+        <address>
+          Av. Central #123, Zona Comercial<br>
+          Tel. <a href="tel:+50322220000">+503 2222-0000</a><br>
+          WhatsApp <a href="tel:+50377778888">+503 7777-8888</a>
+        </address>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 SuperFresh Supermercados. Proyecto académico, todos los precios son ficticios.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a SuperFresh: formulario, teléfonos, horarios y mapa.">
+  <title>Contacto y sucursales | SuperFresh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <p class="top-bar-text"><span>🚚 Envío <strong>gratis</strong> en compras mayores a $30.00</span><span>🕒 Lun a sáb 7:00 AM - 9:00 PM</span><span>⚡ Entrega en menos de 1 hora</span></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar el menú">
+    <div class="container header-main">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+      <a href="index.html" class="brand">🥦 Super<span>Fresh</span></a>
+      <form class="header-search" role="search" action="catalogo.html" method="get">
+        <label for="q" class="visually-hidden">Buscar productos</label>
+        <span class="icon" aria-hidden="true">🔍</span>
+        <input type="search" id="q" name="q" placeholder="Buscar productos (leche, manzana, pollo)...">
+      </form>
+      <div class="header-actions">
+        <a href="cuentas.html" class="user-link">👤 Mi cuenta</a>
+        <a href="catalogo.html#mi-carrito" class="cart-link">🛒 Carrito</a>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="ofertas.html">Ofertas de la semana</a></li>
+          <li><a href="catalogo.html#mi-carrito">Carrito y pago</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <header class="page-title">
+      <div class="container">
+        <h1>Contacto y sucursales</h1>
+        <p>Escríbenos y te respondemos en menos de 24 horas.</p>
+      </div>
+    </header>
+
+    <div class="container contact-grid">
+      <section class="card" aria-labelledby="escribenos">
+        <h2 id="escribenos">Escríbenos</h2>
+        <form action="index.html" method="get">
+          <div class="form-group"><label for="c-nombre">Nombre completo</label><input type="text" id="c-nombre" name="nombre" placeholder="Ej. Carlos Mendoza" autocomplete="name" required></div>
+          <div class="form-group"><label for="c-email">Correo electrónico</label><input type="email" id="c-email" name="email" placeholder="carlos@ejemplo.com" autocomplete="email" required></div>
+          <div class="form-group"><label for="c-tel">Teléfono (opcional)</label><input type="tel" id="c-tel" name="tel" placeholder="7777-8888" autocomplete="tel"></div>
+          <div class="form-group"><label for="c-motivo">Motivo</label>
+            <select id="c-motivo" name="motivo" required>
+              <option value="">Selecciona una opción</option>
+              <option>Consulta sobre un pedido</option>
+              <option>Sugerencia</option>
+              <option>Reclamo</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="c-msg">Mensaje</label><textarea id="c-msg" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" minlength="10" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <aside class="card" aria-labelledby="atencion">
+        <h2 id="atencion">Atención al cliente</h2>
+        <div class="info-item"><h3>📍 Sucursal principal</h3><p>Av. Central #123, Zona Comercial</p></div>
+        <div class="info-item"><h3>📞 Teléfonos</h3><p>Atención telefónica: <a href="tel:+50322220000">+503 2222-0000</a></p><p>WhatsApp pedidos: <a href="tel:+50377778888">+503 7777-8888</a></p></div>
+        <div class="info-item"><h3>🕒 Horarios</h3><p>Lunes a sábado: 7:00 AM - 9:00 PM</p><p>Domingos: 8:00 AM - 7:00 PM</p></div>
+        <div class="info-item"><h3>✉️ Correo</h3><p><a href="mailto:hola@superfresh.example">hola@superfresh.example</a></p></div>
+      </aside>
+    </div>
+
+    <section class="container" aria-labelledby="mapa">
+      <h2 id="mapa">Encuéntranos</h2>
+      <iframe class="map-frame" title="Mapa de la sucursal principal de SuperFresh" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=San+Salvador,+El+Salvador&amp;output=embed" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <a href="index.html" class="brand">🥦 Super<span>Fresh</span></a>
+        <p>Tu supermercado de confianza: calidad, frescura y entregas rápidas.</p>
+      </section>
+      <nav aria-label="Atención al cliente">
+        <h3>Atención al cliente</h3>
+        <ul>
+          <li><a href="contacto.html">Contacto y sucursales</a></li>
+          <li><a href="cuentas.html">Mi cuenta</a></li>
+          <li><a href="catalogo.html#mi-carrito">Carrito y pago</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Pasillos">
+        <h3>Pasillos</h3>
+        <ul>
+          <li><a href="catalogo.html#frutas">Frutas y verduras</a></li>
+          <li><a href="catalogo.html#carnes">Carnicería y pescado</a></li>
+          <li><a href="catalogo.html#lacteos">Lácteos y huevos</a></li>
+          <li><a href="ofertas.html">Ofertas de la semana</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h3>Escríbenos</h3>
+        <address>
+          Av. Central #123, Zona Comercial<br>
+          Tel. <a href="tel:+50322220000">+503 2222-0000</a><br>
+          WhatsApp <a href="tel:+50377778888">+503 7777-8888</a>
+        </address>
+      </section>
+    </div>
+    <p class="copyright">&copy; 2026 SuperFresh Supermercados. Proyecto académico, todos los precios son ficticios.</p>
+  </footer>
+
+</body>
+</html>
